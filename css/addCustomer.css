@@ -5,6 +5,12 @@
 @font-face {
   font-family: "Proxima Nova";
   src: url("Proxima/ProximaNova-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("Proxima/Proxima-Nova-Sbold.ttf");
+  font-weight: 500;
 }
 /*End Family*/
 /*Start Iconmoon*/
@@ -67,28 +73,26 @@ body {
   width: 100%;
   margin-top: 6px;
   outline: none;
-  font-size: 14px;
-  line-height: 17px;
   letter-spacing: 0.02em;
   padding: 8.5px 10px;
   color: #4A5660;
+  font-size: 14px;
+  font: 400 14px/17px "Proxima Nova";
 }
 
 .label {
-  font-size: 14px;
-  line-height: 17px;
+  font: 400 14px/17px "Proxima Nova";
   letter-spacing: 0.02em;
   color: #4A5660;
 }
 
 .title {
-  font-size: 20px;
-  line-height: 20px;
+  font: 500 20px/20px "Proxima Nova";
   letter-spacing: 0.03em;
   margin: 0;
   padding: 0;
   color: #4A5660;
-  margin: 2px 0 25px 0;
+  margin: 0px 0 25px 0;
 }
 
 .col3 {
@@ -114,8 +118,7 @@ body {
 }
 
 .links .link {
-  font-size: 14px;
-  line-height: 17px;
+  font: 400 14px/17px "Proxima Nova";
   letter-spacing: 0.02em;
   color: #81878E;
   text-decoration: none;
@@ -139,8 +142,7 @@ body {
 
 .header .head-title {
   margin: 0;
-  font-size: 40px;
-  line-height: 40px;
+  font: 500 40px/40px "Proxima Nova";
   display: flex;
   align-items: center;
   letter-spacing: 0.02em;
@@ -152,13 +154,13 @@ body {
   background: #139CFF;
   border-radius: 5px;
   border: none;
-  font-size: 15px;
-  line-height: 15px;
+  font: 400 15px/15px "Proxima Nova";
   align-items: center;
   text-align: center;
   letter-spacing: 0.02em;
   color: #FFFFFF;
   padding: 10px 20px;
+  align-self: center;
   cursor: pointer;
 }
 
@@ -207,8 +209,7 @@ body {
   position: absolute;
   left: -1px;
   top: -5px;
-  font-size: 12px;
-  line-height: 12px;
+  font: 400 12px/12px "Proxima Nova";
   padding: 6.1px 3.99px;
 }
 
@@ -231,8 +232,7 @@ body {
 }
 
 .note .input::placeholder {
-  font-size: 14px;
-  line-height: 17px;
+  font: 400 14px/14px "Proxima Nova";
   letter-spacing: 0.02em;
   color: #B4B9BE;
 }
@@ -271,8 +271,7 @@ body {
   background: rgba(19, 156, 255, 0.2);
   border-radius: 4px;
   color: #139CFF;
-  font-size: 15px;
-  line-height: 18px;
+  font: 400 15px/18px "Proxima Nova";
   letter-spacing: 0.02em;
   padding: 6px 8px 6px 6px;
   vertical-align: sub;
@@ -282,8 +281,7 @@ body {
 }
 
 .tags .tag .myIcon {
-  font-size: 10px;
-  line-height: 10px;
+  font: 400 10px/10px "Proxima Nova";
   margin-left: 5px;
 }
 
