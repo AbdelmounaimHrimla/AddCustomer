@@ -64,7 +64,7 @@ body {
 }
 
 .card {
-    padding: 18px;
+    padding: 20px 18px;
     background: #FFFFFF;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
     border-radius: 6px;
@@ -90,7 +90,6 @@ body {
 .label {
     font-size: 14px;
     line-height: 17px;
-    align-items: center;
     letter-spacing: 0.02em;
     color: #4A5660;
 }
@@ -256,6 +255,12 @@ body {
 .note {
     grid-column: 2/3;
     grid-row: 1/2;
+    padding: 20px 14px;
+    align-self: start;
+}
+
+.note .input {
+    margin-top: 0
 }
 
 .note .input::placeholder {
@@ -273,7 +278,8 @@ body {
 
 .tags {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 2/ sapn 3;
+    align-self: start;
 }
 
 .tags .input {
@@ -288,6 +294,12 @@ body {
     margin-top: 15px;
 }
 
+.tags .allTags .groupTags:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .tags .tag {
     background: rgba(#139CFF, 0.2);
     border-radius: 4px;
@@ -296,15 +308,16 @@ body {
     line-height: 18px;
     letter-spacing: 0.02em;
     padding: 6px 8px 6px 6px;
-    margin: 0 8px 8px 0;
     vertical-align: sub;
     display: inline-block;
+    float: left;
+    margin: 8px 8px 0 0;
 }
 
 .tags .tag .myIcon {
     font-size: 10px;
     line-height: 10px;
-    padding: 0 0 8px 10px;
+    margin-left: 5px;
 }
 
 
