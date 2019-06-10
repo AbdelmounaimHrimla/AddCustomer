@@ -1,3 +1,6 @@
+/****************Hrimla Testing***************/
+
+
 /*Font Family*/
 
 @font-face {
@@ -229,7 +232,7 @@ body {
 
 .customer input[type="checkbox"]:checked+.label::after {
     font-family: "icomoon" !important;
-    content: "";
+    content: "\e901";
     color: #fff;
     position: absolute;
     left: -1px;
