@@ -89,7 +89,7 @@ body {
 }
 
 .label {
-    font: 400 14px/17px 'Proxima Nova';
+    font: 400 15px/17px 'Proxima Nova';
     letter-spacing: 0.02em;
     color: #4A5660;
 }
@@ -134,7 +134,7 @@ body {
 }
 
 .links .link {
-    font: 400 14px/17px 'Proxima Nova';
+    font: 400 15px/17px 'Proxima Nova';
     letter-spacing: 0.02em;
     color: #81878E;
     text-decoration: none;
@@ -175,8 +175,8 @@ body {
     border-radius: 5px;
     border: none;
     font: 400 15px/ 15px 'Proxima Nova';
-    align-items: center;
-    text-align: center;
+    //align-items: center;
+    //text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     padding: 10px 20px;
@@ -199,22 +199,31 @@ body {
 .customer {
     grid-column: 1/2;
     grid-row: 1/3;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 19px;
-    row-gap: 16px;
+    align-self: start;
 }
 
-.customer input[type="checkbox"] {
+.customerBody {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px 19px;
+}
+
+.customer .title {
+    margin-bottom: 25px;
+}
+
+.customerBody input[type="checkbox"] {
     display: none;
 }
 
-.customer .label {
+.customerBody .label {
     position: relative;
     cursor: pointer;
 }
 
-.customer .check .label::before {
+.customerBody .check .label::before {
     content: "";
     width: 15.5px;
     height: 15.5px;
@@ -226,18 +235,17 @@ body {
     margin-right: 10px;
 }
 
-.customer input[type="checkbox"]:checked+.label::after {
+.customerBody input[type="checkbox"]:checked+.label::after {
     font-family: "icomoon" !important;
     content: "\e901";
     color: #fff;
     position: absolute;
-    left: -1px;
-    top: -5px;
-    font: 400 12px/12px 'Proxima Nova';
-    padding: 6.1px 3.99px;
+    left: 4px;
+    top: 3px;
+    font: 400 10px/10px 'Proxima Nova';
 }
 
-.customer .check input[type="checkbox"]:checked+.label::before {
+.customerBody .check input[type="checkbox"]:checked+.label::before {
     background: #139CFF;
     border: 1.3px solid #139CFF;
 }
@@ -250,17 +258,17 @@ body {
 
 .note {
     grid-column: 2/3;
-    grid-row: 1/2;
-    padding: 20px 14px;
+    grid-row: 1/ 2;
     align-self: start;
+    padding: 20px 14px
 }
 
-.note .input {
+.noteBody .input {
     margin-top: 0
 }
 
-.note .input::placeholder {
-    font: 400 14px/14px 'Proxima Nova';
+.noteBody .input::placeholder {
+    font: 400 14px/17px 'Proxima Nova';
     letter-spacing: 0.02em;
     color: #B4B9BE;
 }
@@ -273,15 +281,20 @@ body {
 
 .tags {
     grid-column: 2/3;
-    grid-row: 2/ sapn 3;
+    grid-row: 2/ span 3;
     align-self: start;
 }
 
-.tags .input {
+.tagsBody .input {
     margin: 6px 0 0 0;
 }
 
-.tags .input::placeholder {
+.tagsBody .input::placeholder {
+    font: 400 14px/17px 'Proxima Nova';
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
     color: #C4C4C4;
 }
 
@@ -290,7 +303,7 @@ body {
 }
 
 .tags .allTags .groupTags {
-    margin-top: -8px;
+    margin-bottom: -8px;
 }
 
 .tags .allTags .groupTags:after {
@@ -307,9 +320,8 @@ body {
     letter-spacing: 0.02em;
     padding: 6px 8px 6px 6px;
     vertical-align: sub;
-    display: inline-block;
     float: left;
-    margin: 8px 8px 0 0;
+    margin: 0 8px 8px 0;
 }
 
 .tags .tag .myIcon {
@@ -325,16 +337,32 @@ body {
 
 .address {
     grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.addressBody {
+    grid-column: 1/2;
+    grid-row: 1/3;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 19px;
-    row-gap: 19px;
+    grid-gap: 16px 19px;
+}
+
+.address .title {
+    margin-bottom: 9px;
+}
+
+.address .input {
+    font: 400 14px/14px "Proxima Nova";
+    letter-spacing: 0.03em;
+    color: #4A5660;
 }
 
 
 /*End Address*/
 
-@media (max-width: 499px),
+
+/*@media (max-width: 499px),
 (min-width: 500px),
 (min-width: 576px) {
     .customer {
@@ -373,4 +401,4 @@ body {
         grid-column: 1/2;
         grid-row: 3/4;
     }
-}
+} */
