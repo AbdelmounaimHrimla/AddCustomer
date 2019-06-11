@@ -223,6 +223,10 @@ body {
   border: 1.3px solid #139CFF;
 }
 
+.customerBody div:last-of-type {
+  margin-top: 4px;
+}
+
 /*End Customer*/
 /*Star Note*/
 .note {
@@ -259,7 +263,6 @@ body {
   display: flex;
   align-items: center;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
   color: #C4C4C4;
 }
 
