@@ -1,29 +1,29 @@
-@charset "UTF-8";
-/****************Hrimla Testing***************/
-/****************Hrimla Bgha I Pulli*****************************/
 /*Font Family*/
 @font-face {
-  font-family: "Proxima Nova";
+  font-family: 'Proxima Nova';
   src: url("Proxima/ProximaNova-Regular.ttf");
   font-weight: 400;
 }
+
 @font-face {
-  font-family: "Proxima Nova";
+  font-family: 'Proxima Nova';
   src: url("Proxima/Proxima-Nova-Sbold.ttf");
   font-weight: 500;
 }
+
 /*End Family*/
 /*Start Iconmoon*/
 @font-face {
-  font-family: "icomoon";
+  font-family: 'icomoon';
   src: url("fonts/icomoon.eot?ids2zd");
   src: url("fonts/icomoon.eot?ids2zd#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?ids2zd") format("truetype"), url("fonts/icomoon.woff?ids2zd") format("woff"), url("fonts/icomoon.svg?ids2zd#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-[class^=icon-],
+
+[class^="icon-"],
 [class*=" icon-"] {
-  font-family: "icomoon" !important;
+  font-family: 'icomoon' !important;
   speak-as: none;
   font-style: normal;
   font-weight: normal;
@@ -35,11 +35,11 @@
 }
 
 .icon-checkmark:before {
-  content: "";
+  content: "\e901";
 }
 
 .icon-cheveron-right:before {
-  content: "";
+  content: "\e900";
   color: #139CFF;
   margin: 0 11px;
   font-size: 14px;
@@ -47,14 +47,14 @@
 }
 
 .icon-close:before {
-  content: "";
+  content: "\e902";
   cursor: pointer;
 }
 
 /*End Iconmoon*/
 /*Start Global*/
 body {
-  font-family: "Proxima Nova";
+  font-family: 'Proxima Nova';
   background: #F6F7FB;
 }
 
@@ -76,18 +76,17 @@ body {
   letter-spacing: 0.02em;
   padding: 8.5px 10px;
   color: #4A5660;
-  font-size: 14px;
-  font: 400 14px/17px "Proxima Nova";
+  font: 400 14px/17px 'Proxima Nova';
 }
 
 .label {
-  font: 400 14px/17px "Proxima Nova";
+  font: 400 14px/17px 'Proxima Nova';
   letter-spacing: 0.02em;
   color: #4A5660;
 }
 
 .title {
-  font: 500 20px/20px "Proxima Nova";
+  font: 500 20px/20px 'Proxima Nova';
   letter-spacing: 0.03em;
   margin: 0;
   padding: 0;
@@ -118,7 +117,7 @@ body {
 }
 
 .links .link {
-  font: 400 14px/17px "Proxima Nova";
+  font: 400 14px/17px 'Proxima Nova';
   letter-spacing: 0.02em;
   color: #81878E;
   text-decoration: none;
@@ -142,7 +141,7 @@ body {
 
 .header .head-title {
   margin: 0;
-  font: 500 40px/40px "Proxima Nova";
+  font: 500 40px/ 40px 'Proxima Nova';
   display: flex;
   align-items: center;
   letter-spacing: 0.02em;
@@ -154,7 +153,7 @@ body {
   background: #139CFF;
   border-radius: 5px;
   border: none;
-  font: 400 15px/15px "Proxima Nova";
+  font: 400 15px/ 15px 'Proxima Nova';
   align-items: center;
   text-align: center;
   letter-spacing: 0.02em;
@@ -169,7 +168,7 @@ body {
 .block {
   display: grid;
   grid-template-columns: minmax(0, 61.3333%) minmax(0, 1fr);
-  grid-gap: 23px 23px;
+  grid-gap: 23px;
 }
 
 .customer {
@@ -181,7 +180,7 @@ body {
   row-gap: 16px;
 }
 
-.customer input[type=checkbox] {
+.customer input[type="checkbox"] {
   display: none;
 }
 
@@ -202,18 +201,18 @@ body {
   margin-right: 10px;
 }
 
-.customer input[type=checkbox]:checked + .label::after {
+.customer input[type="checkbox"]:checked + .label::after {
   font-family: "icomoon" !important;
-  content: "";
+  content: "\e901";
   color: #fff;
   position: absolute;
   left: -1px;
   top: -5px;
-  font: 400 12px/12px "Proxima Nova";
+  font: 400 12px/12px 'Proxima Nova';
   padding: 6.1px 3.99px;
 }
 
-.customer .check input[type=checkbox]:checked + .label::before {
+.customer .check input[type="checkbox"]:checked + .label::before {
   background: #139CFF;
   border: 1.3px solid #139CFF;
 }
@@ -232,7 +231,7 @@ body {
 }
 
 .note .input::placeholder {
-  font: 400 14px/14px "Proxima Nova";
+  font: 400 14px/14px 'Proxima Nova';
   letter-spacing: 0.02em;
   color: #B4B9BE;
 }
@@ -241,7 +240,7 @@ body {
 /*Start Tags*/
 .tags {
   grid-column: 2/3;
-  grid-row: 2/sapn 3;
+  grid-row: 2/ sapn 3;
   align-self: start;
 }
 
@@ -271,7 +270,7 @@ body {
   background: rgba(19, 156, 255, 0.2);
   border-radius: 4px;
   color: #139CFF;
-  font: 400 15px/18px "Proxima Nova";
+  font: 400 15px/18px 'Proxima Nova';
   letter-spacing: 0.02em;
   padding: 6px 8px 6px 6px;
   vertical-align: sub;
@@ -281,7 +280,7 @@ body {
 }
 
 .tags .tag .myIcon {
-  font: 400 10px/10px "Proxima Nova";
+  font: 400 10px/10px 'Proxima Nova';
   margin-left: 5px;
 }
 
@@ -296,5 +295,41 @@ body {
 }
 
 /*End Address*/
+@media (max-width: 499px), (min-width: 500px), (min-width: 576px) {
+  .customer {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .note {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .tags {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .address {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+}
 
-/*# sourceMappingURL=addCustomer.css.map */
+@media (min-width: 992px) {
+  .customer {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .note {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .tags {
+    grid-column: 2/3;
+    grid-row: 2/ sapn 3;
+    align-self: start;
+  }
+  .address {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+}
